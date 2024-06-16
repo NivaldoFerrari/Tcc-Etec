@@ -1,0 +1,350 @@
+/* Limpando o CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* Header ou Cabeçalho */
+
+.header {
+    background:#1E3A8A;
+    padding-inline: 16px;
+}
+
+/* Barra de navegação */
+
+.nav {
+  max-width: 1280px;
+  height: 70px;
+  margin-inline: auto;  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* Itens da barra de Nav */
+.logo img{
+    height: 48px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color:white;
+    padding-block: 16px;
+
+}
+
+
+/*plano de fundo a se retirado
+
+
+*/
+
+.main {
+    height: 100%;
+    
+}
+
+
+/* Botao de menu */
+.menu {
+   display: none; 
+   border: none;
+   background: none;
+   border-top: 3px solid white;
+   cursor: pointer; 
+}
+
+.menu::before,
+.menu::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+/* Grade do plano de fundo */
+body { 
+    background-size: 20px 20px;
+    background-image: linear-gradient(to right, lightgrey 1px, transparent 1px), linear-gradient(to bottom, lightgrey 1px, transparent 1px);
+    
+}
+
+/* Apresentação do site */
+.apresentacao {
+    width: 98%;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.apresentacao img {
+    padding-top: 100px;
+    max-height: 350px;
+}
+
+.bem_vindo {
+    padding-top: 80px;
+    max-height: 300px;
+    width: 40%;
+    padding-bottom: 60px;    
+}
+
+.bem_vindo h1 {
+    color: #3E3E3E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    padding-bottom: 10px;
+    
+}
+
+.bem_vindo h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    color: #626B7F;
+    font-size: 20px;
+}
+.vantagens {
+    padding-top: 30px;
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+} 
+
+.vantagens ul {
+    color: #1E3A8A;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 44px;
+        
+
+}
+ .vantagens li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    color:#3E3E3E;
+    width: 50%;
+    height: 40px;
+    list-style-image: url(imagens/correct.svg);
+    
+ }
+
+
+
+ /* Convie Barulho */
+ .convite{
+    color: #3E3E3E;
+    font-size: calc(50% + 1vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 12vh;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+.convite h1 {
+    width: 80%;
+} 
+
+.convite span {
+    color: #6099F4;
+}
+
+/* Nosso projeto */
+.nosso_projeto{
+    padding-top: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    
+    
+    
+}
+
+.imaxem_ex {
+    width: 45%;
+    
+}
+.imaxem_ex img{
+    display: block;
+    max-width: 100%;
+    
+}
+
+.nosso_content {
+    width: 45%;
+    padding-top: 50px;
+}
+
+.nosso_content h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3E3E3E;
+    padding-bottom: 20px;
+}
+
+.nosso_content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 26px;
+    color: #626B7F;
+}
+
+/* Sobre */
+.sobre {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.tecnologia {
+    border: 4px solid #3E3E3E;
+    height: 500px;
+    width: 400px;
+}
+
+.inovacao{
+    border: 4px solid #3E3E3E;
+    height: 500px;
+    width: 400px;
+}
+
+.oportunidades{
+    border: 4px solid #3E3E3E;
+    height: 500px; 
+    width: 400px;   
+}
+
+/* Rodapé */
+footer {
+  background-color: #1E3A8A;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+
+
+footer a {
+    color: white;
+    padding-top: 6px;
+}
+
+
+@media (max-width:750px){
+    /* Responsividade do Menu */
+    .menu{
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #1E3A8A;
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+    /*Transição menu */
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+    
+    /* Apresentação do site */
+    .apresentacao {
+        flex-direction: column;
+    }
+    
+    .apresentacao img {
+    
+        max-width: 80%;
+    }
+
+    /* Responsividade Apresentação */
+    .bem_vindo{
+        width: 80%;
+    }
+    
+    /* Resposividade Nosso projeto */
+    .nosso_projeto {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imaxem_ex {
+        
+        width:80%;
+        
+    }
+    
+    .nosso_content {
+        width: 80%;
+        
+    }
+    
+    .tecnologia {
+        width: 80%;
+        height: 350px;
+
+    }
+
+    .inovacao {
+        width: 80%;
+        height: 350px;
+
+    }
+
+    .oportunidades{
+        width: 80%;
+        height: 350px;
+
+    }
+}
