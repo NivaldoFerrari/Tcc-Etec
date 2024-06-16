@@ -228,22 +228,34 @@ body {
     flex-wrap: wrap;    
 }
 
-.tecnologia {
-    border: 4px solid #3E3E3E;
-    height: 500px;
-    width: 400px;
+
+
+/* Cards */
+.cards img {
+    width: 40%;
 }
 
-.inovacao{
-    border: 4px solid #3E3E3E;
+.cards h5 {
+    padding-top: 20px;
+    font-size: 20px;
+}
+.cards p{
+    padding-top: 20px;
+    color: #626B7F;
+    width: 70%;
+    margin: 0 auto;
+}
+.cards {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 4px 4px 12px #aaa;
     height: 500px;
     width: 400px;
-}
-
-.oportunidades{
-    border: 4px solid #3E3E3E;
-    height: 500px; 
-    width: 400px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Rodapé */
@@ -258,9 +270,7 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     color: white;
-}
-
-
+} 
 
 footer a {
     color: white;
@@ -268,7 +278,7 @@ footer a {
 }
 
 
-@media (max-width:750px){
+@media (max-width:800px){
     /* Responsividade do Menu */
     .menu{
         display: block;
