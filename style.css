@@ -342,7 +342,7 @@ footer a {
 
 .content1 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color: #3E3E3E;
     padding-bottom: 40px;
  
@@ -453,6 +453,9 @@ footer a {
 
     }
 
+    #imagemEspecial {
+        display: none;
+    }
     
 }
 
