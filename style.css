@@ -49,10 +49,7 @@ a {
 }
 
 
-/*plano de fundo a se retirado
 
-
-*/
 
 .main {
     height: 100%;
@@ -81,7 +78,7 @@ a {
 
 /* Grade do plano de fundo */
 body { 
-    background-size: 20px 20px;
+    background-size: 15px 15px;
     background-image: linear-gradient(to right, lightgrey 1px, transparent 1px), linear-gradient(to bottom, lightgrey 1px, transparent 1px);
     
 }
@@ -277,6 +274,104 @@ footer a {
     padding-top: 6px;
 }
 
+/* Guia */
+.guia_intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.guia_content {
+    background: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 9%, rgba(0,149,255,1) 100%);
+    height: 380px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 14px;
+    box-shadow: 4px 4px 12px #aaa;
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.contettext {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50px;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.contettext h1, h2, p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contettext p{
+    font-size: 18px;
+}
+
+.contettext h2 {
+    margin-top: 70px;        
+}
+
+.conteiner {
+    padding-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap-reverse;
+    
+}
+
+
+.content1 {
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.content1 h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    color: #3E3E3E;
+    padding-bottom: 40px;
+ 
+}
+
+.content1 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3E3E3E;
+    font-size: 28px;
+}
+
+.content1 a {
+    color: white;
+    background-color: #63A5FF;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.content2 {
+    width: 550px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content2 img {
+    width: 70%;;
+}
 
 @media (max-width:800px){
     /* Responsividade do Menu */
@@ -357,4 +452,9 @@ footer a {
         height: 350px;
 
     }
+
+    
 }
+
+
+
