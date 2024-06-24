@@ -144,7 +144,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
       
     color:#3E3E3E;
-    width: 50%;
+    width: 200px;
     height: 40px;
     list-style-image: url(imagens/correct.svg);
     
@@ -338,7 +338,13 @@ footer a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    
+
+}
+
+.content1 a:hover {
+    transition: 0.3s;
+    padding: 15px;
+    background-color: #1E3A8A;
 }
 
 .content1 h1 {
@@ -501,6 +507,10 @@ footer a {
     .menu{
         display: block;
         z-index: 1;
+    }
+
+    .conteiner {
+        padding: 19px;
     }
 
     .nav-list {
